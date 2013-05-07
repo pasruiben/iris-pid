@@ -1,0 +1,14 @@
+Este trabajo aborda el problema de la localización del iris en imágenes en escala de grises.
+El artículo que hemos usado como referencia es: Localization of iris in gray scale images using intensity gradient (A. Basit, M.Y. Javed).
+
+El proceso se divide en cuatro fases: localización de la pupila, detección del límite iris-esclerótica, localización de párpados y eliminación de pestañas.
+
+En la primera fase comenzamos aplicando un filtro de media a la imagen de entrada para suavizarla. A continuación la binarizamos para facilitar la búsqueda de un punto cualquiera dentro de la pupila.
+Una vez localizado ese punto procedemos a calcular el centro y el radio de la pupila.
+
+En la segunda fase se localiza el límite exterior del iris. Para ello aplicamos un filtro de Gauss a la imagen y calculamos los puntos con gradiente significativo dentro de un banda en torno al límite iris-esclerótica.
+
+En la tercera fase procedemos a la localización de los párpados, que pueden aparecer sobre la región del iris calculada en la fase anterior.
+Para ello buscamos puntos con gradiente significativo dentro de la region del iris.
+
+En la última fase eliminamos las pestañas que queden dentro de la región del iris (que ya se encuentra completamente definida), si es que las hay.

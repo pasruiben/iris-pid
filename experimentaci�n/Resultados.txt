@@ -1,0 +1,15 @@
+Experimentación
+
+Para realizar la experimentación hemos utilizado la base de imágenes de iris CASIA v1, que contiene 756
+imágenes de iris y es la base de imágenes en la que se basaron los autores del artículo que hemos seguido
+como referencia. Debemos agradecer al Center for Biometrics and Security Research de la Chinese Academy of Sciences
+que nos dejaran usar esta base de imágenes privada.
+Los resultados experimentales nos muestran que para un ordenador Pentium IV, 2.0GHz Dual Core, 4GB RAM
+el tiempo medio empleado en el procesado de una imagen es de aproximadamente un segundo.
+El porcentaje de éxito en la localización del iris es del 96.43%, con tan solo 27 imágenes problemáticas de las 756.
+Además, de estas 27 imágenes problemáticas, 22 se deben a que el iris no se encuentra contenido completamente
+en los límites de la imagen, por lo que su correcta localización no es posible. Podría intentarse ajustar los
+diferentes parámetros del algoritmo para conseguir que las 5 imágenes restantes (0.6% de la base de imágenes original) 
+funcionaran. Cada una de estas 5 imágenes falla porque o bien el límite exterior del iris aparece
+difuso, o bien hay una presencia masiva de pestañas
+En cualquier caso, consideramos que el porcentaje de acierto es muy alto y por tanto la aplicación muy fiable.

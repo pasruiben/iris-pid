@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ProjectGuid>{BBCE0F33-EECC-4A58-9224-8CE136049617}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IrisPIDLib</RootNamespace>
+    <AssemblyName>IrisPIDLib</AssemblyName>
+	
+	<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+	<NoWin32Manifest>true</NoWin32Manifest>
+	<OutputPath>..\..\ejecutable\</OutputPath>
+	<UseVSHostingProcess>false</UseVSHostingProcess>
+	<DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+
+  
+  
+  
+  
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>lib\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>lib\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Estado.cs" />
+    <Compile Include="Fases\Fase.cs" />
+    <Compile Include="Fases\FaseEliminacionPestanas.cs" />
+    <Compile Include="Fases\FaseLimiteIrisEsclerotica.cs" />
+    <Compile Include="Fases\FaseLocalizacionParpados.cs" />
+    <Compile Include="Fases\FaseLocalizacionPupila.cs" />
+    <Compile Include="Parametros.cs" />
+    <Compile Include="Pasos\Paso.cs" />
+    <Compile Include="Pasos\PasoCentroPupila.cs" />
+    <Compile Include="Pasos\PasoCirculosExternoInterno.cs" />
+    <Compile Include="Pasos\PasoEliminaPestanas.cs" />
+    <Compile Include="Pasos\PasoFiltroCandidatosGradiente.cs" />
+    <Compile Include="Pasos\PasoFiltroGaussiano.cs" />
+    <Compile Include="Pasos\PasoFiltroMedia.cs" />
+    <Compile Include="Pasos\PasoIrisDelimitado.cs" />
+    <Compile Include="Pasos\PasoParabolaMinimosCuadrados.cs" />
+    <Compile Include="Pasos\PasoParabolaMinimosCuadradosInferior.cs" />
+    <Compile Include="Pasos\PasoParabolaMinimosCuadradosSuperior.cs" />
+    <Compile Include="Pasos\PasoParabolaVirtual.cs" />
+    <Compile Include="Pasos\PasoParabolaVirtualInferior.cs" />
+    <Compile Include="Pasos\PasoParabolaVirtualSuperior.cs" />
+    <Compile Include="Pasos\PasoPosiblesPestanas.cs" />
+    <Compile Include="Pasos\PasoPuntoPupila.cs" />
+    <Compile Include="Pasos\PasoPuntosGradienteIris.cs" />
+    <Compile Include="Pasos\PasoPuntosGradienteParpado.cs" />
+    <Compile Include="Pasos\PasoPuntosGradienteParpadoInferior.cs" />
+    <Compile Include="Pasos\PasoPuntosGradienteParpadoSuperior.cs" />
+    <Compile Include="Pasos\PasoRadioIris.cs" />
+    <Compile Include="Pasos\PasoRadioPupila.cs" />
+    <Compile Include="Util\AyudanteImagenes.cs" />
+    <Compile Include="Util\Parabola.cs" />
+    <Compile Include="Util\Pintor.cs" />
+    <Compile Include="Util\Serializacion.cs" />
+    <Compile Include="Util\Vector2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iris.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  -->
+</Project>

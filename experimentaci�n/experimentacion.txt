@@ -1,0 +1,31 @@
+IFL - Iris Fuera de Límites de la imagen
+
+003_2_3 - IFL
+003_2_4 - IFL
+013_1_3 - IFL
+013_2_1 - IFL
+017_2_2 - IFL
+017_2_3 - IFL
+037_1_1 - IFL
+037_1_3 - IFL
+039_2_1 - IFL
+039_2_2 - IFL
+039_2_3 - IFL
+039_2_4 - IFL
+049_1_2 - Otros
+050_2_1 - IFL
+050_2_4 - IFL
+051_2_3 - IFL
+052_2_1 - IFL
+052_2_3 - IFL
+052_2_4 - IFL
+068_1_1 - IFL
+068_1_3 - IFL
+072_1_1 - IFL
+077_1_2 - Otros
+080_2_3 - IFL
+082_2_2 - Otros
+088_1_2 - Otros
+094_2_3 - Otros
+
+27 fallos de 756 imágenes: 3.57%

@@ -1,0 +1,5 @@
+﻿<Parametros>
+  <CorteBinarizacion>70</CorteBinarizacion>
+  <tamanoKernelGauss>27</tamanoKernelGauss>
+  <sigmaGauss>10</sigmaGauss>
+</Parametros>

@@ -1,0 +1,14 @@
+This work is about localization of iris in gray scale images.
+We used the following article as our main reference: Localization of iris in gray scale images using intensity gradient (A. Basit, M.Y. Javed).
+
+The process of iris localization is divided in four stages: pupil localization, iris outer boundary detection, eyelids localization and eyelashes removal.
+
+In the first stage we begin by applying a mean filter to the input image in order to soften it. Next, we apply a threshold filter to ease the localization of a point (any point) belonging to the pupil.
+Once that is done, we proceed to calculate the center and radius of the pupil.
+
+In the second phase the outer boundary of the iris is located. In order to do that we first apply a Gauss filter to the image and calculate the points with significant intensity gradient in a band around where we think the iris/sclera boundary must be.
+
+In the third phase we proceed to locate eyelids, which may occlude part of the iris region that was calculated on the previous phase.
+In order to do this we look for points with significant intensity gradient inside the iris region.
+
+In the last phase we remove the eyelashes (if any) that may still be occluding part of the iris.
